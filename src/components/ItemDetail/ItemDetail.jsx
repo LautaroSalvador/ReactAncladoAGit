@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom"
 import { ItemCount } from "../ItemCount/ItemCount"
 
 export const ItemDetail = ({prod}) =>{
+
+    const onAdd = (cantidad) =>{
+        console.log(cantidad)
+    }
+
 return(
     <div className="row g-0">
         <div className="col-md-4">
@@ -13,8 +19,8 @@ return(
         <p className="card-text">Marca : {prod.marca}</p>
         <p className="card-text">Precio : {prod.precio}</p>
         <p className="card-text">Stock : {prod.stock}</p>
-        <ItemCount ValorInicial={1} stock={prod.stock}/>
-        <button className="btn btn-dark">Finalizar compra</button>
+        <ItemCount ValorInicial={1} stock={prod.stock} onAdd={onAdd}/>
+        <Link className="nav-link" to={'/Cart'}><button className="btn btn-dark">Finalizar compra</button></Link>
     </div>
 </div>
 </div>
