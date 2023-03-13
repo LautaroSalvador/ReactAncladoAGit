@@ -1,5 +1,11 @@
-.cardProductos {
-    justify-content: space-around;
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='40' viewBox='0 0 24 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40c5.523 0 10-4.477 10-10V0C4.477 0 0 4.477 0 10v30zm22 0c-5.523 0-10-4.477-10-10V0c5.523 0 10 4.477 10 10v30z' fill='%231d4827' fill-opacity='0.41' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-color: #000;
 }
 
 .cardProducto {
@@ -7,11 +13,94 @@
     margin: 5px;
 }
 
-.ItemDetail {
-    max-width: 540px;
-    margin-top: 20px;
+.card-body {
+    margin-left: 0;
+}
+
+.cardProductos {
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.card-title {
+    font-size: 1.7rem;
+}
+
+.card-text {
+    color: blue;
+    font-size: 1rem;
+}
+
+.card-precio {
+    color: green;
+    font-size: 20px;
+}
+
+.card-stock {
+    font-size: 20px;
+    color: green;
+}
+
+.card-precio-principal {
+    font-size: 20px;
+    color: green;
+}
+
+.card-marca-principal {
+    font-size: 1.2rem;
+}
+
+.card {
+    margin-top: 4%;
 }
 
 .contForm {
     margin-top: 20px;
+}
+
+.carrito-productos-container {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.agregar-carrito {
+    margin-left: 100px;
+}
+
+.finalizar-compra-detail {
+    margin-top: 10px;
+}
+
+.cant-carrito {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.titulo-carrito {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.boton-carrito {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.carrito-precio-total {
+    font-size: 2rem;
+    color: white;
+}
+
+.carrito-boton {
+    margin: 6px;
+}
+
+.form-label {
+    color: white;
+    font-size: 18px;
+}
+
+.precio-total {
+    color: red;
 }

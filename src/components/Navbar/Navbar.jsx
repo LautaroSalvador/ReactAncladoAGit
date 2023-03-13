@@ -15,7 +15,7 @@ return (
         <Secciones/>
         <Categorias/>
     </ul>
-    <CartWidget cantCarrito={10}/>
+    <CartWidget ItemCount={1}/>
     </div>
 </div>
 </nav>
